@@ -1,34 +1,114 @@
-main{
+main {
     display: flex;
     background-color: white;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 0px 50px;
-}
-.search-area{
-    background-color: #eee;
-    font-family:'Times New Roman', Times, serif;
-    font-size:16pt  ;
-    font-weight:300;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 0px;
+    padding: 0px 100px;
+    gap: 3px;
 }
 
-.search-area button{
+.search-area {
+    background-color: #eee;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    flex-direction: column;
+}
+
+.search-area button {
     text-align: center;
-    font-size:14pt  ;
-    font-weight:300;
+    font-size: 14pt;
+    font-weight: 300;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.4px;
     height: 25px;
 }
-.search-area input{
-    font-size:14pt  ;
-    font-weight:300;
+
+.search-area input {
+    font-size: 14pt;
+    font-weight: 300;
     font-family: 'Times New Roman', Times, serif;
     width: 20%;
+}
+
+.link-area-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.link-area {
+    display: flex;
+    background-color: rgb(105, 237, 215);
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+    flex-grow: 1;
+}
+
+.link-area2 {
+    display: flex;
+    background-color: rgb(108, 202, 186);
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+    width: 20%;
+}
+
+.link-area3 {
+    display: flex;
+    background-color: rgb(74, 150, 137);
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+    flex-grow: 1;
+}
+
+.link-area3 input {
+    font-size: 14pt;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .link-area3 input:hover::placeholder {
+    color: black;
+} */
+/*cursor üzerin gelince siyah olsun*/
+
+.link-area p {
+    margin: 0;
+}
+
+.link-area a {
+    color: rgb(95, 47, 95);
+}
+
+.button-and-link-area {
+    display: flex;
+    /* padding: 1px; */
+    gap: 6px;
+
+}
+
+.button-and-link-area button {
+    font-size: 14pt;
+    gap: 6px;
+}
+
+@media (max-width: 600px) {
+    .link-area-wrapper {
+        flex-direction: column;
+    }
+
+    .link-area2 {
+        width: 100%;
+    }
 }
